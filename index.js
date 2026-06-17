@@ -11,6 +11,13 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/users', (req, res) => {
+    res.json({
+      nombre:'Carlos',
+      apellido:'Perez'
+    });
+})
+
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
